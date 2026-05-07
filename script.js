@@ -108,11 +108,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 4. Modal (About App) Interactivity
+    const dataSafetyTrigger = document.getElementById('dataSafetyTrigger');
+    const whatsNewTrigger = document.getElementById('whatsNewTrigger');
+    const seeAllReviews = document.getElementById('seeAllReviews');
+
+    const openAboutModal = () => {
+        aboutModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scroll
+    };
+
     if (aboutTrigger) {
-        aboutTrigger.addEventListener('click', () => {
-            aboutModal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scroll
-        });
+        aboutTrigger.addEventListener('click', openAboutModal);
+    }
+
+    if (dataSafetyTrigger) {
+        dataSafetyTrigger.addEventListener('click', openAboutModal);
+    }
+
+    if (whatsNewTrigger) {
+        whatsNewTrigger.addEventListener('click', openAboutModal);
+    }
+
+    if (seeAllReviews) {
+        seeAllReviews.addEventListener('click', openAboutModal);
     }
 
     const closeModal = () => {
