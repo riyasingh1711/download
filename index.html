@@ -111,7 +111,7 @@
         </section>
 
         <!-- WHAT'S NEW -->
-        <section class="info-section clickable-section">
+        <section class="info-section clickable-section" id="whatsNewTrigger">
             <div class="section-head">
                 <h2>What's new</h2>
                 <span class="material-icons-outlined">arrow_forward</span>
@@ -138,7 +138,7 @@
         </section>
 
         <!-- DATA SAFETY SECTION -->
-        <section class="info-section clickable-section">
+        <section class="info-section clickable-section" id="dataSafetyTrigger">
             <div class="section-head">
                 <h2>Data safety</h2>
                 <span class="material-icons-outlined">arrow_forward</span>
@@ -234,25 +234,11 @@
 
             <!-- USER REVIEWS -->
             <div class="reviews-list">
-                <?php
-                $revs = [
-                    ["n"=>"Rohit_91", "c"=>"#9c27b0", "t"=>"XyroBet অ্যাপের ডিজাইন সুন্দর এবং ব্যবহার করা সহজ। অ্যাপটি দ্রুত কাজ করে, তাই অভিজ্ঞতাটা বেশ ভালো লাগে"],
-                    ["n"=>"AmanVerma22", "c"=>"#0d47a1", "t"=>"XyroBet செயலியின் வடிவமைப்பு அழகாகவும் பயன்படுத்த எளிதாகவும் உள்ளது. செயலி மென்மையாக இயங்குகிறது. அதனால் நல்ல அனுபவமாக இருக்கிறது."],
-                    ["n"=>"ArjunKolkata", "c"=>"#7b1fa2", "t"=>"XyroBet యాప్ డిజైన్ బాగుంది మరియు ఉపయోగించడం చాలా సులభం. యాప్ స్మూత్ గా పనిచేస్తుంది కాబట్టి అనుభవం బాగుంటుంది."],
-                    ["n"=>"Harpreet87", "c"=>"#673ab7", "t"=>"XyroBet ਐਪ ਦਾ ਡਿਜ਼ਾਇਨ ਵਧੀਆ ਹੈ ਅਤੇ ਇਸਨੂੰ ਵਰਤਣਾ ਆਸਾਨ ਲੱਗਦਾ ਹੈ। ਐਪ ਸੁਮੂਥ ਤਰੀਕੇ ਨਾਲ ਚੱਲਦੀ ਹੈ, ਇਸ ਕਰਕੇ ਕੁੱਲ ਅਨੁਭਵ ਚੰਗਾ ਹੈ।"],
-                    ["n"=>"Imran_786", "c"=>"#673ab7", "t"=>"XyroBet ଆପ୍ ର ଡିଜାଇନ୍ ସୁନ୍ଦର ଏବଂ ବ୍ୟବହାର କରିବାକୁ ସହಜ ଲାଗେ। ଆପ୍‌ଟି ସ୍ମୁଥ୍ ଚାଲେ, ସେଥିପାଇଁ ସମੁଦାୟ ଅନੁଭବ ଭଲ ଲାଗେ।"],
-                    ["n"=>"Nikhil_GJ", "c"=>"#c2185b", "t"=>"XyroBet ಆಪ್‌ನ ವಿನ್ಯಾಸ ಚೆನ್ನಾಗಿದೆ ಮತ್ತು ಬಳಸಲು ಸುಲಭವಾಗಿದೆ. ಆಪ್ ಸ್ಮೂತ್ ಆಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ, ಆದ್ದರಿಂದ ಒಳ್ಳೆಯ ಅನುಭವ ಸಿಗುತ್ತದೆ."],
-                    ["n"=>"ManuKerala", "c"=>"#1976d2", "t"=>"XyroBet ആപ്പിന്റെ ഡിസൈൻ മനോഹരവും ഉപയോഗിക്കാൻ എളുപ്പവുമാണ്. ആപ്പ് സുഗമമായി പ്രവർത്തിക്കുന്നതിനാൽ മൊത്തത്തിലുള്ള അനുഭവം നല്ലതാണ്."],
-                    ["n"=>"Mahesh_Pune", "c"=>"#afb42b", "t"=>"XyroBet ॲपचे डिझाइन आकर्षक आहे आणि वापरायला सोपे आहे. ॲप व्यवस्थित चालते, त्यामुळे अनुभव चांगला वाटतो."],
-                    ["n"=>"SaiTeja_7", "c"=>"#795548", "t"=>"XyroBet app का इंटरफ़ेस साफ़ और इस्तेमाल में आसान है. ऐप स्मूथ चलता है और overall experience अच्छा लगता है."],
-                    ["n"=>"Karthik_Offl", "c"=>"#689f38", "t"=>"XyroBet એપનું ડિઝાઇન સુંદર છે અને ઉપયોગમાં સરળ લાગે છે. એપ સ્મૂથ ચાલે છે, એટલે કુલ અનુભવ સારો લાગે છે"]
-                ];
-                foreach($revs as $r) { ?>
                 <div class="review-card">
                     <div class="rev-header">
                         <div class="rev-user-info">
-                            <div class="avatar" style="background:<?php echo $r['c'];?>"><?php echo substr($r['n'],0,1);?></div>
-                            <span class="rev-name"><?php echo $r['n'];?></span>
+                            <div class="avatar" style="background:#9c27b0">R</div>
+                            <span class="rev-name">Rohit_91</span>
                         </div>
                         <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
                     </div>
@@ -266,7 +252,7 @@
                         </div>
                         <span class="rev-date">5 May 2026</span>
                     </div>
-                    <p class="rev-text"><?php echo $r['t'];?></p>
+                    <p class="rev-text">XyroBet অ্যাপের ডিজাইন সুন্দর এবং ব্যবহার করা সহজ। অ্যাপটি দ্রুত কাজ করে, তাই অভিজ্ঞতাটা বেশ ভালো লাগে</p>
                     <div class="rev-helpful">
                         <span class="helpful-text">Did you find this helpful?</span>
                         <div class="chip-group">
@@ -275,10 +261,252 @@
                         </div>
                     </div>
                 </div>
-                <?php } ?>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#0d47a1">A</div>
+                            <span class="rev-name">AmanVerma22</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet செயலியின் வடிவமைப்பு அழகாகவும் பயன்படுத்த எளிதாகவும் உள்ளது. செயலி மென்மையாக இயங்குகிறது. அதனால் நல்ல அனுபவமாக இருக்கிறது.</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#7b1fa2">A</div>
+                            <span class="rev-name">ArjunKolkata</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet యాప్ డిజైన్ బాగుంది మరియు ఉపయోగించడం చాలా సులభం. యాప్ స్మూత్ గా పనిచేస్తుంది కాబట్టి అనుభవం బాగుంటుంది.</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#673ab7">H</div>
+                            <span class="rev-name">Harpreet87</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet ਐਪ ਦਾ ਡਿਜ਼ਾਇਨ ਵਧੀਆ ਹੈ ਅਤੇ ਇਸਨੂੰ ਵਰਤਣਾ ਆਸਾਨ ਲੱਗਦਾ ਹੈ। ਐਪ ਸੁਮੂਥ ਤਰੀਕੇ ਨਾਲ ਚੱਲਦੀ ਹੈ, ਇਸ ਕਰਕੇ ਕੁੱਲ ਅਨੁਭਵ ਚੰਗਾ ਹੈ।</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#673ab7">I</div>
+                            <span class="rev-name">Imran_786</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet ଆପ୍ ର ଡିଜାଇନ୍ ସୁନ୍ଦର ଏବଂ ବ୍ୟବହାର କରିବାକୁ ସହಜ ଲାଗେ। ଆପ୍‌ଟି ସ୍ମୁଥ୍ ଚାଲେ, ସେଥିପାଇଁ ସମୁଦାୟ ଅନੁଭବ ଭଲ ଲାଗେ।</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#c2185b">N</div>
+                            <span class="rev-name">Nikhil_GJ</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet ಆಪ್‌ನ ವಿನ್ಯಾಸ ಚೆನ್ನಾಗಿದೆ ಮತ್ತು ಬಳಸಲು ಸುಲಭವಾಗಿದೆ. ಆಪ್ ಸ್ಮೂತ್ ಆಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ, ಆದ್ದರಿಂದ ಒಳ್ಳೆಯ ಅನುಭವ ಸಿಗುತ್ತದೆ.</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#1976d2">M</div>
+                            <span class="rev-name">ManuKerala</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet ആപ്പിന്റെ ഡിസൈൻ മനോഹരവും ഉപയോഗിക്കാൻ എളുപ്പവുമാണ്. ആപ്പ് സുഗമമായി പ്രവർത്തിക്കുന്നതിനാൽ മൊത്തത്തിലുള്ള അനുഭവം നല്ലതാണ്.</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#afb42b">M</div>
+                            <span class="rev-name">Mahesh_Pune</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet ॲपचे डिझाइन आकर्षक आहे आणि वापरायला सोपे आहे. ॲप व्यवस्थित चालते, त्यामुळे अनुभव चांगला वाटतो.</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#795548">S</div>
+                            <span class="rev-name">SaiTeja_7</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet app का इंटरफ़ेस साफ़ और इस्तेमाल में आसान है. ऐप स्मूथ चलता है और overall experience अच्छा लगता है.</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:#689f38">K</div>
+                            <span class="rev-name">Karthik_Offl</span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text">XyroBet એપનું ડિઝાઇન સુંદર છે અને ઉપયોગમાં સરળ લાગે છે. એપ સ્મૂથ ચાલે છે, એટલે કુલ અનુભવ સારો લાગે છે</p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="see-all-btn" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; cursor: pointer;">
+            <div id="seeAllReviews" class="see-all-btn" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; cursor: pointer;">
                 <span style="color: #01875f; font-weight: 500; font-size: 14px;">See all reviews</span>
                 <span class="material-icons-outlined" style="color: #01875f; font-size: 18px;">arrow_forward</span>
             </div>
