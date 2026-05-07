@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>XyroBet - Apps on Google Play</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" type="image/webp" href="logo.webp">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- GOOGLE PLAY SPLASH SCREEN -->
+    <div id="splash">
+        <div class="splash-content">
+            <div class="splash-logo">
+                <img src="logo.webp" alt="XyroBet">
+            </div>
+            <div class="loader-line"></div>
+            <p class="splash-brand">Google Play</p>
+        </div>
+    </div>
+
+    <!-- STICKY TOP NAVIGATION -->
+    <nav class="top-nav" id="topNav">
+        <div class="nav-wrapper">
+            <span class="material-icons-outlined nav-icon">arrow_back</span>
+            <div class="search-fake">
+                <span class="material-icons-outlined" style="font-size: 20px; margin-right: 12px;">search</span>
+                <span>Search for apps & games</span>
+            </div>
+            <span class="material-icons-outlined nav-icon">mic_none</span>
+        </div>
+    </nav>
+
+    <div class="container" id="mainContainer">
+        <!-- MAIN APP INFO -->
+        <header class="app-header">
+            <div class="header-main">
+                <div class="app-icon-wrapper">
+                    <img src="logo.webp" alt="XyroBet" class="app-icon">
+                </div>
+                <div class="app-info-content">
+                    <h1 class="app-title">XyroBet
+                        <span class="material-icons verified-badge" style="color: #1a73e8;">verified</span>
+                    </h1>
+                    <p class="dev-name" style="color: #01875f; font-weight: 500;">Betery</p>
+                    <p class="sub-meta">Contains ads · In-app purchases</p>
+                </div>
+            </div>
+
+            <!-- STATS STRIP -->
+            <div class="stats-strip">
+                <div class="stat-item">
+                    <div class="stat-top">4.8 <span class="material-icons" style="font-size:12px">star</span></div>
+                    <div class="stat-bottom">Rating</div>
+                </div>
+                <div class="v-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-top">1M+</div>
+                    <div class="stat-bottom">Downloads</div>
+                </div>
+                <div class="v-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-top">
+                        <span class="material-icons" style="font-size: 20px; color: #5f6368;">verified_user</span>
+                    </div>
+                    <div class="stat-bottom">Editor's choice</div>
+                </div>
+            </div>
+
+            <!-- PRIMARY ACTION: INSTALL BUTTON -->
+            <div class="install-box">
+                <a href="https://xyrobet.com/apk/Xyrobet.apk" id="installBtn" class="install-btn" download="Xyrobet.apk">Install</a>
+
+                <div id="installUI" class="download-progress-box">
+                    <div class="progress-header">
+                        <div class="progress-header-left">
+                            <span id="installPercent">0%</span>
+                            <span class="dot-separator">•</span>
+                            <span id="installSize">0 MB / 24.5 MB</span>
+                        </div>
+                        <span id="installSpeed">0 MB/s</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div id="progressBar" class="progress-bar-fill"></div>
+                    </div>
+                    <button id="cancelBtn" class="cancel-btn">Cancel</button>
+                </div>
+            </div>
+
+            <!-- DEVICE AVAILABILITY -->
+            <div class="device-info">
+                <span class="material-icons-outlined" style="font-size: 18px;">important_devices</span>
+                <span>This app is available for all of your devices</span>
+            </div>
+        </header>
+
+        <!-- SCREENSHOTS GALLERY -->
+        <section class="info-section no-border">
+            <div class="gallery-container">
+                <div class="gallery-scroll">
+                    <img src="https://i.ibb.co/yFMgmsnb/Chat-GPT-Image-May-5-2026-04-37-08-PM.png" alt="XyroBet 1">
+                    <img src="https://i.ibb.co/4wzmPKkn/public-1.png" alt="XyroBet 2">
+                    <img src="https://i.ibb.co/0ykGsCj3/Screenshot-20260505-160417.png" alt="XyroBet 3">
+                    <img src="https://i.ibb.co/3Y8vGG6M/public-2.png" alt="XyroBet 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- WHAT'S NEW -->
+        <section class="info-section clickable-section">
+            <div class="section-head">
+                <h2>What's new</h2>
+                <span class="material-icons-outlined">arrow_forward</span>
+            </div>
+            <div class="whats-new-meta">
+                <span class="version-label">6.4.5001</span>
+            </div>
+            <p class="short-desc">Minor bug fixes and performance improvements.</p>
+        </section>
+
+        <!-- ABOUT THIS APP -->
+        <section class="info-section clickable-section" id="aboutTrigger">
+            <div class="section-head">
+                <h2>About this app</h2>
+                <span class="material-icons-outlined">arrow_forward</span>
+            </div>
+            <div class="about-preview">
+                <p class="short-desc">XyroBet is a modern mobile entertainment app designed for users who enjoy a smooth, fast, and user-friendly experience on their smartphones. The app offers a clean interface, responsive design, and simple navigation, making it easy to explore sections, access features, and...</p>
+                <div style="margin-top: 20px;">
+                    <p class="updated-label" style="font-size: 14px; color: #202124; font-weight: 500; margin-bottom: 4px;">Updated on</p>
+                    <p class="updated-date" style="font-size: 14px; color: #5f6368;">28 April 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATA SAFETY SECTION -->
+        <section class="info-section clickable-section">
+            <div class="section-head">
+                <h2>Data safety</h2>
+                <span class="material-icons-outlined">arrow_forward</span>
+            </div>
+            <p class="short-desc" style="margin-bottom: 16px;">Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age. The developer provided this information and may update it over time.</p>
+            <div class="safety-box">
+                <div class="safety-item">
+                    <span class="material-icons-outlined">share</span>
+                    <div class="safety-text">
+                        <p>This app may share these data types with third parties</p>
+                    </div>
+                </div>
+                <div class="safety-item">
+                    <span class="material-icons-outlined">cloud_upload</span>
+                    <div class="safety-text">
+                        <p>This app may collect these data types</p>
+                    </div>
+                </div>
+                <div class="safety-item">
+                    <span class="material-icons-outlined">lock</span>
+                    <div class="safety-text">
+                        <p>Data is encrypted in transit</p>
+                    </div>
+                </div>
+                <div class="safety-item">
+                    <span class="material-icons-outlined">delete</span>
+                    <div class="safety-text">
+                        <p>You can request that data be deleted</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DEVELOPER CONTACT -->
+        <section class="info-section" id="devContactTrigger" style="cursor: pointer;">
+            <div class="section-head">
+                <h2>Developer contact</h2>
+                <span class="material-icons-outlined" id="devContactIcon">expand_more</span>
+            </div>
+            <div class="dev-contact-content" id="devContactContent" style="display: none;">
+                <div class="contact-item">
+                    <span class="material-icons-outlined">language</span>
+                    <div class="contact-details">
+                        <p class="contact-title">Website</p>
+                        <p class="contact-link">https://xyrobet.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="material-icons-outlined">email</span>
+                    <div class="contact-details">
+                        <p class="contact-title">Email</p>
+                        <p class="contact-link">support@xyrobet.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <span class="material-icons-outlined">location_on</span>
+                    <div class="contact-details">
+                        <p class="contact-title">Address</p>
+                        <p class="contact-value">Betery Entertainment, Plot No. 45, Hitech City, Hyderabad, India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RATINGS AND REVIEWS SUMMARY -->
+        <section class="info-section">
+            <div class="section-head">
+                <h2>Ratings and reviews</h2>
+                <span class="material-icons-outlined">arrow_forward</span>
+            </div>
+            <p class="ratings-verified">Ratings and reviews are verified <span class="material-icons-outlined" style="font-size:14px; vertical-align:middle;">info</span></p>
+
+            <div class="ratings-box">
+                <div class="rating-summary">
+                    <div class="big-num">4.8</div>
+                    <div class="summary-stars">
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                        <span class="material-icons">star</span>
+                    </div>
+                    <div class="total-revs">7.1K reviews</div>
+                </div>
+                <div class="rating-bars">
+                    <div class="bar-row"><span>5</span><div class="bar-outer"><div class="bar-inner" style="width: 85%"></div></div></div>
+                    <div class="bar-row"><span>4</span><div class="bar-outer"><div class="bar-inner" style="width: 8%"></div></div></div>
+                    <div class="bar-row"><span>3</span><div class="bar-outer"><div class="bar-inner" style="width: 4%"></div></div></div>
+                    <div class="bar-row"><span>2</span><div class="bar-outer"><div class="bar-inner" style="width: 2%"></div></div></div>
+                    <div class="bar-row"><span>1</span><div class="bar-outer"><div class="bar-inner" style="width: 1%"></div></div></div>
+                </div>
+            </div>
+
+            <!-- USER REVIEWS -->
+            <div class="reviews-list">
+                <?php
+                $revs = [
+                    ["n"=>"Rohit_91", "c"=>"#9c27b0", "t"=>"XyroBet অ্যাপের ডিজাইন সুন্দর এবং ব্যবহার করা সহজ। অ্যাপটি দ্রুত কাজ করে, তাই অভিজ্ঞতাটা বেশ ভালো লাগে"],
+                    ["n"=>"AmanVerma22", "c"=>"#0d47a1", "t"=>"XyroBet செயலியின் வடிவமைப்பு அழகாகவும் பயன்படுத்த எளிதாகவும் உள்ளது. செயலி மென்மையாக இயங்குகிறது. அதனால் நல்ல அனுபவமாக இருக்கிறது."],
+                    ["n"=>"ArjunKolkata", "c"=>"#7b1fa2", "t"=>"XyroBet యాప్ డిజైన్ బాగుంది మరియు ఉపయోగించడం చాలా సులభం. యాప్ స్మూత్ గా పనిచేస్తుంది కాబట్టి అనుభవం బాగుంటుంది."],
+                    ["n"=>"Harpreet87", "c"=>"#673ab7", "t"=>"XyroBet ਐਪ ਦਾ ਡਿਜ਼ਾਇਨ ਵਧੀਆ ਹੈ ਅਤੇ ਇਸਨੂੰ ਵਰਤਣਾ ਆਸਾਨ ਲੱਗਦਾ ਹੈ। ਐਪ ਸੁਮੂਥ ਤਰੀਕੇ ਨਾਲ ਚੱਲਦੀ ਹੈ, ਇਸ ਕਰਕੇ ਕੁੱਲ ਅਨੁਭਵ ਚੰਗਾ ਹੈ।"],
+                    ["n"=>"Imran_786", "c"=>"#673ab7", "t"=>"XyroBet ଆପ୍ ର ଡିଜାଇନ୍ ସୁନ୍ଦର ଏବଂ ବ୍ୟବହାର କରିବାକୁ ସହಜ ଲାଗେ। ଆପ୍‌ଟି ସ୍ମୁଥ୍ ଚାଲେ, ସେଥିପାଇଁ ସମੁଦାୟ ଅନੁଭବ ଭଲ ଲାଗେ।"],
+                    ["n"=>"Nikhil_GJ", "c"=>"#c2185b", "t"=>"XyroBet ಆಪ್‌ನ ವಿನ್ಯಾಸ ಚೆನ್ನಾಗಿದೆ ಮತ್ತು ಬಳಸಲು ಸುಲಭವಾಗಿದೆ. ಆಪ್ ಸ್ಮೂತ್ ಆಗಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ, ಆದ್ದರಿಂದ ಒಳ್ಳೆಯ ಅನುಭವ ಸಿಗುತ್ತದೆ."],
+                    ["n"=>"ManuKerala", "c"=>"#1976d2", "t"=>"XyroBet ആപ്പിന്റെ ഡിസൈൻ മനോഹരവും ഉപയോഗിക്കാൻ എളുപ്പവുമാണ്. ആപ്പ് സുഗമമായി പ്രവർത്തിക്കുന്നതിനാൽ മൊത്തത്തിലുള്ള അനുഭവം നല്ലതാണ്."],
+                    ["n"=>"Mahesh_Pune", "c"=>"#afb42b", "t"=>"XyroBet ॲपचे डिझाइन आकर्षक आहे आणि वापरायला सोपे आहे. ॲप व्यवस्थित चालते, त्यामुळे अनुभव चांगला वाटतो."],
+                    ["n"=>"SaiTeja_7", "c"=>"#795548", "t"=>"XyroBet app का इंटरफ़ेस साफ़ और इस्तेमाल में आसान है. ऐप स्मूथ चलता है और overall experience अच्छा लगता है."],
+                    ["n"=>"Karthik_Offl", "c"=>"#689f38", "t"=>"XyroBet એપનું ડિઝાઇન સુંદર છે અને ઉપયોગમાં સરળ લાગે છે. એપ સ્મૂથ ચાલે છે, એટલે કુલ અનુભવ સારો લાગે છે"]
+                ];
+                foreach($revs as $r) { ?>
+                <div class="review-card">
+                    <div class="rev-header">
+                        <div class="rev-user-info">
+                            <div class="avatar" style="background:<?php echo $r['c'];?>"><?php echo substr($r['n'],0,1);?></div>
+                            <span class="rev-name"><?php echo $r['n'];?></span>
+                        </div>
+                        <span class="material-icons-outlined" style="color:#5f6368; font-size: 18px;">more_vert</span>
+                    </div>
+                    <div class="rev-stars-row">
+                        <div class="stars">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                        <span class="rev-date">5 May 2026</span>
+                    </div>
+                    <p class="rev-text"><?php echo $r['t'];?></p>
+                    <div class="rev-helpful">
+                        <span class="helpful-text">Did you find this helpful?</span>
+                        <div class="chip-group">
+                            <button class="chip">Yes</button>
+                            <button class="chip">No</button>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+
+            <div class="see-all-btn" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 0; cursor: pointer;">
+                <span style="color: #01875f; font-weight: 500; font-size: 14px;">See all reviews</span>
+                <span class="material-icons-outlined" style="color: #01875f; font-size: 18px;">arrow_forward</span>
+            </div>
+        </section>
+
+        <!-- FOOTER LINKS -->
+        <section class="footer-links">
+            <div class="footer-col">
+                <h3>Store</h3>
+                <a href="#">Gift cards</a>
+                <a href="#">Redeem</a>
+                <a href="#">Family sharing</a>
+            </div>
+            <div class="footer-col">
+                <h3>Kids & family</h3>
+                <a href="#">Parent Guide</a>
+                <a href="#">Family sharing</a>
+            </div>
+        </section>
+
+        <footer class="bottom-footer">
+            <div class="footer-row" style="display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 10px;">
+                <a href="#" style="font-size: 12px; color: #5f6368; text-decoration: none;">Terms of use</a>
+                <a href="#" style="font-size: 12px; color: #5f6368; text-decoration: none;">Privacy</a>
+                <a href="#" style="font-size: 12px; color: #5f6368; text-decoration: none;">Developers</a>
+                <span style="font-size: 12px; color: #5f6368;">All prices include VAT.</span>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- WIN NOTIFICATION TOAST -->
+    <div id="liveToast" class="toast">
+        <div class="toast-icon">
+            <img src="logo.webp" alt="X">
+        </div>
+        <div class="toast-body">
+            <p id="toastText"><strong><span id="winnerName">Arjun</span></strong> just won <span id="winAmount">₹5,000</span>!</p>
+            <span>Just now</span>
+        </div>
+    </div>
+
+    <!-- ABOUT APP MODAL -->
+    <div id="aboutModal" class="full-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <div class="modal-header-left" style="display: flex; align-items: center; gap: 16px;">
+                    <img src="logo.webp" alt="X" class="modal-icon" style="width: 32px; height: 32px; border-radius: 6px;">
+                    <div class="modal-title-group" style="display: flex; flex-direction: column;">
+                        <span class="modal-app-name" style="font-size: 18px; font-weight: 500; color: #202124;">XyroBet</span>
+                        <span class="modal-sub-title" style="font-size: 13px; color: #5f6368;">About this app</span>
+                    </div>
+                </div>
+                <span id="closeAbout" class="material-icons" style="cursor:pointer; color:#5f6368;">close</span>
+            </div>
+            <div class="modal-content">
+                <p>XyroBet is a modern mobile entertainment app designed for users who enjoy a smooth, fast, and user-friendly experience on their smartphones. The app offers a clean interface, responsive design, and simple navigation, making it easy to explore sections, access features, and enjoy a comfortable platform experience in one place.</p>
+                <p style="margin-top: 12px;">With XyroBet, users can expect an organized layout, lightweight performance, and a mobile-first design built for convenience. Every part of the app is structured to feel intuitive, whether you are browsing the interface, checking available sections, or simply looking for a seamless and engaging experience on mobile devices.</p>
+
+                <h3 class="modal-section-title" style="font-size: 14px; font-weight: 500; color: #202124; margin: 20px 0 12px 0;">Key Features:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li>Clean and modern interface</li>
+                    <li>Fast and smooth performance</li>
+                    <li>Easy navigation across sections</li>
+                    <li>Mobile-optimized design</li>
+                    <li>User-friendly layout</li>
+                    <li>Regular improvements and updates</li>
+                </ul>
+                <p style="margin-top: 12px;">XyroBet is built with a focus on usability, speed, and accessibility, helping users enjoy a polished and comfortable mobile app experience anytime and anywhere.</p>
+
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-label">Version</span>
+                        <span class="tech-value">6.4.5001</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Updated on</span>
+                        <span class="tech-value">28 April 2026</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Requires Android</span>
+                        <span class="tech-value">4.4+</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Downloads</span>
+                        <span class="tech-value">1M+</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Content rating</span>
+                        <span class="tech-value">18+</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Interactive elements</span>
+                        <span class="tech-value">Interactive elements</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Released on</span>
+                        <span class="tech-value">21 February 2024</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-label">Offered by</span>
+                        <span class="tech-value">Betery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
