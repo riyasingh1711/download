@@ -405,6 +405,10 @@ body {
     border-top: 1px solid #f1f3f4;
 }
 
+.clickable-section {
+    cursor: pointer;
+}
+
 .info-section.no-border {
     border-top: none;
 }
@@ -565,6 +569,17 @@ body {
 
 .summary-stars .material-icons { font-size: 14px; }
 
+.total-revs {
+    font-size: 12px;
+    color: #5f6368;
+}
+
+.ratings-verified {
+    font-size: 12px;
+    color: #5f6368;
+    margin-bottom: 24px;
+}
+
 .rating-bars { flex: 1; }
 
 .bar-row {
@@ -617,6 +632,17 @@ body {
     color: white;
     font-weight: 500;
     font-size: 14px;
+}
+
+.rev-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #202124;
+}
+
+.rev-stars-row {
+    display: flex;
+    align-items: center;
 }
 
 .stars { color: var(--google-green); display: flex; margin: 8px 0; }
